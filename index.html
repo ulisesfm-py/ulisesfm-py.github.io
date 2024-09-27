@@ -1,0 +1,283 @@
+<!--
+  Hello!
+  -
+  Simplefolio is a clean and responsive portfolio template for Developers!
+  Created by Jacobo Martinez.
+  -
+  Github Repo: https://github.com/cobidev/simplefolio/
+  Readme: https://github.com/cobidev/simplefolio/README.md
+  -
+  For business & inquires, contact me -> jacobojavier98@gmail.com
+-->
+<!DOCTYPE html>
+<html lang="en" class="sr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/png" href="assets/spacesuit.ico" />
+
+  <!-- Todo: put here your site title -->
+  <title>Ulises Fernández | Aerospace and Data Science</title>
+  <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
+  <meta name="keywords" content="aerospace engineering, python, javascript, machine learning, data science" />
+  <!-- Todo: improve your SEO by adding a small description of you -->
+  <meta name="description" content="[Your name here] | Developer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="styles.scss" />
+  <script defer src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+  <!-- Todo: remove the below script once you finish your portfolio -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
+
+<body>
+  <div id="top"></div>
+
+  <!-- **** Hero Section **** -->
+  <section id="hero" class="jumbotron">
+    <div class="container">
+      <h1 class="hero-title load-hidden">
+        Hello there! I'm <span class="text-color-main">Ulises</span>
+        <br />
+        your <span class="text-color-main"> aerospace engineer</span> with a <span class="text-color-main">data
+          science</span> twist.<br />
+        <span id="animated-text"></span>
+      </h1>
+      <p class="hero-cta load-hidden">
+        <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Know more</a>
+      </p>
+    </div>
+  </section>
+  <!-- /END Hero Section -->
+
+  <!-- **** About Section **** -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title load-hidden">About Me</h2>
+      <div class="row about-wrapper">
+        <div class="col-md-6 col-sm-12">
+          <div class="about-wrapper__image load-hidden">
+            <img alt="Profile Image" class="img-fluid rounded shadow-lg" height="auto" width="400px"
+              src="assets/UlisesGM.png" alt="Profile Image" />
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="about-wrapper__info load-hidden">
+            <p class="about-wrapper__info-text">
+              Hi, I'm Ulises! I'm a senior structural analyst and aerospace engineer with a growing interest in the
+              world of AI. With an MSc in Aircraft Vehicle Design from Cranfield University and another MSc in Aerospace
+              Engineering from UPC, I have a strong foundation in engineering. Over the past 2 years, I've been diving
+              into
+              AI, discovering how it can enhance and complement engineering methods.
+            </p>
+            <p class="about-wrapper__info-text">
+              I recently completed a Professional Program in <a
+                href="https://digitalcredential.stanford.edu/check/E55563F1A9F17E7E7BD95F73F21CB7B065E7ACBCD8A7015052C03291934843DARnhIN0Y3aUUyVm5yRElXdXprZHVPemx1M2JMeTFLaW5yWHV2b3B1VWxwZTlROEpG"
+                target="_blank" rel="noreferrer">Artificial Intelligence</a> at Stanford University. I'm still learning
+              every day, exploring Python, Django, TensorFlow, PyTorch, and more, through courses and hands-on projects.
+            </p>
+            <p class="about-wrapper__info-text">
+              This website is my way of sharing my learning journey in AI and data science. Here, you'll find projects
+              that reflect what I've learned so far and, hopefully, become more exciting as I continue to grow and take
+              on new challenges.
+            </p>
+            <span class="d-flex mt-3">
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume"
+                href="assets/Ulises_Fernandez_CV_ML.pdf">
+                View Resume
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /END About Section -->
+
+
+
+  <!-- **** Projects Section **** -->
+  <section id="projects">
+    <div class="container">
+      <div class="project-wrapper">
+        <h2 class="section-title dark-blue-text">Projects</h2>
+
+        <!-- Notice: each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">Unet Model for Land Image Segmentation</h3>
+              <div>
+                <p class="mb-4">
+                  This project involved developing and comparing three distinct models — a U-Net neural network, a
+                  Logistic Regression model, and a Random Forest Classifier — for land segmentation classification using
+                  aerial imagery data from Kaggle. The project aimed to classify land use types such as water, land,
+                  roads, buildings, and vegetation by leveraging both deep learning and traditional machine learning
+                  methods. The U-Net model was trained with a custom loss function (Categorical Focal Loss), optimized
+                  with GPU support for efficient computation. Meanwhile, Logistic Regression and Random Forest
+                  Classifiers were trained using pixel-wise data to benchmark performance against the U-Net model. The
+                  project demonstrated effective segmentation with an emphasis on model accuracy, class balance, and
+                  computational efficiency.
+
+                </p>
+              </div>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
+                href="https://github.com/ulisesfm-py/Land-Segmentation/blob/main/land_segmentation_unet.ipynb">
+                See on Github
+              </a>
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="project1.html">
+                Read More
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image load-hidden">
+              <a rel="noreferrer" href="#!" target="_blank">
+                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt">
+                  <img alt="Project Image" class="img-fluid" src="assets/Project1.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+        <!-- Notice: each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">Military Aircraft Classification with CNNs</h3>
+              <div>
+                <p class="mb-4">
+                  In this project, I developed and compared two convolutional neural network models—EfficientNetB3 and
+                  ResNet50—for classifying images of military aircraft. The dataset included various types of aircraft,
+                  and the goal was to accurately identify the model of an aircraft from its image. The project involved
+                  data preprocessing, model training with custom callbacks, and performance evaluation using metrics
+                  like precision, recall, and F1-score.
+                </p>
+              </div>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
+                href="https://github.com/ulisesfm-py/Military-Aircraft-Detection">
+                See on GitHub
+              </a>
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="project3.html">
+                Read More
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image load-hidden">
+              <a rel="noreferrer" href="#!" target="_blank">
+                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt">
+                  <img alt="Project Image" class="img-fluid" src="assets/aircraft_detection2.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+        <!-- Notice: each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">Bulldozer Exploratory Data Analysis</h3>
+              <div>
+                <p class="mb-4">
+                  This project involves conducting an exploratory data analysis and building a predictive model for the
+                  sale price of bulldozers using historical sales data. Leveraging machine learning techniques such as
+                  Random Forest Regression and libraries like Scikit-Learn, Pandas, and Seaborn, the project focuses on
+                  identifying key features and trends that influence bulldozer prices. The dataset, sourced from Kaggle,
+                  includes time-series data with attributes like model type, sale date, and equipment characteristics.
+                  The goal is to provide insights and develop a robust model for accurate price predictions.
+                </p>
+              </div>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
+                href="https://github.com/ulisesfm-py/Bulldozer-Bluebook-Regression">
+                See on Github
+              </a>
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="project2.html">
+                Read More
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image load-hidden">
+              <a rel="noreferrer" href="#!" target="_blank">
+                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt">
+                  <img alt="Project Image" class="img-fluid" src="assets/bulldozer_saleprice.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+      </div>
+    </div>
+  </section>
+  <!-- /END Projects Section -->
+
+  <!-- **** Contact Section **** -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-wrapper load-hidden">
+        <p class="contact-wrapper__text">[Put your call to action here]</p>
+        <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="mailto:example@email.com">Call to
+          Action</a>
+      </div>
+    </div>
+  </section>
+  <!-- /END Contact Section -->
+
+  <!-- **** Footer Section **** -->
+  <footer class="footer navbar-static-bottom">
+    <div class="container">
+      <a rel="noreferrer" href="#top" class="back-to-top">
+        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+      </a>
+      <div class="social-links">
+        <a rel="noreferrer" href="#!" target="_blank">
+          <i class="fa fa-twitter fa-inverse"></i>
+        </a>
+        <a rel="noreferrer" href="#!" target="_blank">
+          <i class="fa fa-linkedin fa-inverse"></i>
+        </a>
+        <a rel="noreferrer" href="#!" target="_blank">
+          <i class="fa fa-github fa-inverse"></i>
+        </a>
+      </div>
+
+      <hr />
+
+      <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
+      <p class="footer__text">
+        © 2021 - Template developed by
+        <a rel="noreferrer" href="https://github.com/cobidev" target="_blank">Jacobo Martínez</a>
+      </p>
+
+      <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
+      <p class="mt-3 pt-3">
+        <a rel="noreferrer" class="github-button" href="https://github.com/cobidev/simplefolio/fork"
+          data-icon="octicon-repo-forked" data-size="large" data-show-count="true"
+          aria-label="Fork ntkme/github-buttons on GitHub">Fork</a>
+        <a rel="noreferrer" class="github-button" href="https://github.com/cobidev/simplefolio" data-icon="octicon-star"
+          data-size="large" data-show-count="true" aria-label="Star cobidev/simplefolio on GitHub">Star</a>
+      </p>
+    </div>
+  </footer>
+  <!-- /END Footer Section -->
+
+  <script defer type="module" src="index.js"></script>
+</body>
+
+</html>
